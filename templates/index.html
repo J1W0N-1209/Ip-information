@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP - Information</title>
+  </head>
+  <body>
+    <h1>IP - Information</h1>
+    <form method="post">
+      <input type="text" name="ip" />
+      <input type="submit" value="정보 확인" />
+    </form>
+    <strong>IP : {{ response['query']}} </strong>
+    <br />
+    <strong>Country : {{ response['country']}}</strong>
+    <br />
+    <strong>City : {{ response['city']}}</strong>
+    <br />
+    <strong>TimeZone : {{ response['timezone']}} </strong>
+    <br />
+    <strong>Zip : {{ response['zip'] }}</strong>
+  </body>
+</html>
